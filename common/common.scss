@@ -1,0 +1,13 @@
+// hides Users link in Sidebar to direct traffic to Users Map
+.sidebar-section-link-users {
+    display: none !important;
+}
+
+// moves 'More' section down one
+.sidebar-section-content {
+  display: flex; /* Setup a flex layout so you can reorder things */
+  flex-direction: column;
+  .sidebar-more-section-links-details {
+    order: +1;
+  }
+}
