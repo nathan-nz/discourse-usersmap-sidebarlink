@@ -1,9 +1,19 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8.18", (api) => {
+  (settings.Hamburger_links || "").split("|").forEach((link) => {
+    let [pic, rawLabel, href, target] = (link || "").split(",");
+    let className = `custom-sidebar-link ${rawLabel
+      .replace(/\s+/g, "-")
+      .toLowerCase()}`;
+
+    target = "blank" === target ? "_blank" : "";
+  
+  
+  
   const links = [
       // FontAwesome icons may need to be added in the site settings if they don't correctly appear
-      { title: "Users Map (NEW)", src: "/u/user-map", icon: settings.icon }
+      { title: rawLabel, src: href, icon: pic }
   ]
 
   $(document).ready(function () {
