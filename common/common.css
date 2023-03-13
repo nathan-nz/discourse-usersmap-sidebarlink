@@ -1,4 +1,0 @@
-// hides Users link in Sidebar to direct traffic to Users Map
-.sidebar-section-link-users {
-    display: none !important;
-}
