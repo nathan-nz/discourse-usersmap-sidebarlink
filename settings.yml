@@ -1,4 +1,10 @@
+icon:
+  description: "The icon that you wish to use"
+  type: string
+  default: 'map-marker-alt'
+
 svg_icons: 
-  default: 'map'
+  description: "To prepare an alternate icon, add it to this list"
+  default: 'map-marker-alt'
   type: 'list'
   list_type: 'compact'
