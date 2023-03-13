@@ -1,16 +1,10 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8.18", (api) => {
-//  (settings.Sidebar_links || "").split("|").forEach((link) => {
-//    let [pics, rawLabel, href, target] = (link || "").split(",");
 
-//    target = "blank" === target ? "_blank" : "";
-  
-  
-  
   const links = [
       // FontAwesome icons may need to be added in the site settings if they don't correctly appear
-      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: "map" }
+      { title: "Users Map", src: "/u/user-map", icon: "map" }
   ]
 
   $(document).ready(function () {
