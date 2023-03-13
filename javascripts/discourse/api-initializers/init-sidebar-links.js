@@ -13,7 +13,7 @@ export default apiInitializer("0.8.18", (api) => {
   
   const links = [
       // FontAwesome icons may need to be added in the site settings if they don't correctly appear
-      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: "discourse" }
+      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: "trello" }
   ]
 
   $(document).ready(function () {
