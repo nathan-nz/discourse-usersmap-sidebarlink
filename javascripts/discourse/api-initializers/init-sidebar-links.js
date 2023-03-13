@@ -10,7 +10,7 @@ export default apiInitializer("0.8.18", (api) => {
   
   const links = [
       // FontAwesome icons may need to be added in the site settings if they don't correctly appear
-      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: link.pics }
+      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: "map" }
   ]
 
   $(document).ready(function () {
@@ -56,9 +56,9 @@ export default apiInitializer("0.8.18", (api) => {
                       parentEl.append(linkDiv)
                     
                       let linkIcon = document.getElementById("link_" + linkTitleTrim)
-                      if (linkIcon && link.icon) {
-                          linkIcon.innerHTML = `<svg viewBox="0 0 640 512" class="fa d-icon svg-icon prefix-icon svg-string d-icon-${link.icon}" xmlns="http://www.w3.org/2000/svg">
-                                  <use xlink:href="#${link.icon}"></use>
+                      if (linkIcon && link.pic) {
+                          linkIcon.innerHTML = `<svg viewBox="0 0 640 512" class="fa d-icon svg-icon prefix-icon svg-string d-icon-${link.pic}" xmlns="http://www.w3.org/2000/svg">
+                                  <use xlink:href="#${link.pic}"></use>
                               </svg>
                         `
                       }
