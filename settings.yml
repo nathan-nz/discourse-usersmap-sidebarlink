@@ -1,0 +1,4 @@
+svg_icons: 
+  default: 'map'
+  type: 'list'
+  list_type: 'compact'
