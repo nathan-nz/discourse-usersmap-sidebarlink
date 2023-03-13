@@ -1,10 +1,17 @@
-icon:
+Icon:
   description: "The icon that you wish to use"
   type: string
   default: 'map-marker-alt'
 
+Sidebar_links:
+  type: list
+  list_type: simple
+  default: "discourse,Discourse Meta,https://meta.discourse.org"
+  description:
+    en: 'Comma delimited in this order: Icon,Text,URL,Target.<br><b>Icon:</b> the fontawesome icon.<br><b>Text:</b> what appears on the menu.<br><b>URL:</b> the path for the link.<br><b>Target (optional):</b> use "blank" to open the link in a new tab.'
+
 svg_icons: 
   description: "To prepare an alternate icon, add it to this list"
-  default: 'map-marker-alt'
+  default: 'discourse, map-marker-alt'
   type: 'list'
   list_type: 'compact'
