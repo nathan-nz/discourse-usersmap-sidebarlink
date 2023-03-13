@@ -1,11 +1,8 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8.18", (api) => {
-//  (settings.Sidebar_links || "").split("|").forEach((link) => {
-//    let [pic, rawLabel, href, target] = (link || "").split(",");
-//    let className = `custom-sidebar-link ${rawLabel
-//      .replace(/\s+/g, "-")
-//      .toLowerCase()}`;
+  (settings.Sidebar_links || "").split("|").forEach((link) => {
+    let [pic, rawLabel, href, target] = (link || "").split(",");
 
 //    target = "blank" === target ? "_blank" : "";
   
@@ -13,7 +10,7 @@ export default apiInitializer("0.8.18", (api) => {
   
   const links = [
       // FontAwesome icons may need to be added in the site settings if they don't correctly appear
-      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: "map" }
+      { title: "Discourse Meta", src: "https://meta.discourse.org", icon: pic }
   ]
 
   $(document).ready(function () {
