@@ -1,7 +1,7 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8.18", (api) => {
-  (settings.Hamburger_links || "").split("|").forEach((link) => {
+  (settings.Sidebar_links || "").split("|").forEach((link) => {
     let [pic, rawLabel, href, target] = (link || "").split(",");
     let className = `custom-sidebar-link ${rawLabel
       .replace(/\s+/g, "-")
