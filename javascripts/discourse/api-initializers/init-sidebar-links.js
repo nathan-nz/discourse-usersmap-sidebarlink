@@ -1,8 +1,8 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8.18", (api) => {
-  (settings.Sidebar_links || "").split("|").forEach((link) => {
-    let [pics, rawLabel, href, target] = (link || "").split(",");
+//  (settings.Sidebar_links || "").split("|").forEach((link) => {
+//    let [pics, rawLabel, href, target] = (link || "").split(",");
 
 //    target = "blank" === target ? "_blank" : "";
   
