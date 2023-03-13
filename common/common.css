@@ -8,6 +8,6 @@
   display: flex; /* Setup a flex layout so you can reorder things */
   flex-direction: column;
   .sidebar-more-section-links-details {
-    order: +1;
+    order: +2;
   }
 }
